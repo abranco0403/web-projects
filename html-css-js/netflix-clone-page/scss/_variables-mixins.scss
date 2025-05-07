@@ -1,0 +1,33 @@
+//Colors
+$clr-base-100: #FFFFFF;
+$clr-base-400: #B3B3B3;
+$clr-base-700: #141414;
+$clr-accent: #E50914;
+
+//Typography
+$ff-primary: 'IBM Plex Sans', sans-serif;
+$ff-secondary: 'Bebas Neue', sans-serif;
+
+@function rem($pixel, $contexto: 16) {
+    @return $pixel / $contexto + rem;
+}
+
+@mixin type-1($size) {
+    font-family: $ff-primary;
+    line-height:1.5;
+    font-weight: 400;
+    @if $size == 12 {
+        font-size:rem(12);
+    }
+    @else if $size == 14 {
+        font-size:rem(14);
+    }
+}
+@mixin type-2($size) {
+    font-family: $ff-secondary;
+    line-height: 1;
+    font-weight: bold;
+    @if $size == 80 {
+        font-size:rem(80);
+    }
+}
