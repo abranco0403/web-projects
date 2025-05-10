@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html {font-size: 62.5%;}
+img {
+    display: block;
+    object-fit: fill;
+}
+h1, h2, h3 {
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+p {
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
