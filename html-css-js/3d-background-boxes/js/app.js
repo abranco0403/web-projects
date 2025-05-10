@@ -1,18 +1,38 @@
-const boxesContainer = document.getElementById('boxes');
-const btn = document.getElementById('btn');
+const nums =  document.querySelectorAll('.nums span');
+const counter = document.querySelector('.counter');
+const finalMessage = document.querySelector('.final');
+const replay = document.querySelector('#replay');
 
-btn.addEventListener('click', () => {
-    boxesContainer.classList.toggle('big');
-});
+runAnimation();
 
-function createBoxes() {
-    for (let i = 0; i < 4; i++) {
-        for (let j = 0; j < 4; j++ ) {
-            const box = document.createElement('div');
-            box.classList.add('box');
-            box.style.backgroundPosition = `${-j * 125}px ${-i*125}px`;
-            boxesContainer.appendChild(box);
-        }
-    }
+function resetDOM() {
+    counter.classList.remove('hide');
+    finalMessage.classList.remove('show');
+    nums.forEach((num) => {
+        num.classList.value = '';
+    });
+    nums[0].classList.add('in');
 }
-createBoxes();
+
+function runAnimation() {
+    nums.forEach((num, idx) => {
+        const nextToLast = nums.length - 1;
+
+        num.addEventListener('animationend', (e) => {
+            if(e.animationName === 'goIn' && idx !== nextToLast) {
+                num.classList.remove('in');
+                num.classList.add('out');
+            } else if (e.animationName === 'goOut' && num.nextElementSibling) {
+                num.nextElementSibling.classList.add('in');
+            } else {
+                counter.classList.add('hide');
+                finalMessage.classList.add('show');
+            }
+        });
+    });
+}
+
+replay.addEventListener('click', () => {
+    resetDOM();
+    runAnimation();
+});
