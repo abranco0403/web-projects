@@ -1,0 +1,47 @@
+/****************
+    Typography
+****************/
+$sans-serif: 'Lato', sans-serif;
+$cursive: 'Luckiest Guy', cursive;
+// Headers
+@mixin font-header($size) {
+    font-family: $cursive;
+    line-height: 1;
+    letter-spacing: 2px;
+    @if $size == 48 {font-size: 48px;}
+}
+// Body
+@mixin font-body ($size) {
+    font-weight: bold;
+    font-family: $sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.13px;
+    @if $size == 16 {font-size: 16px;}
+}
+/****************
+    Box-shadow
+****************/
+@mixin box-shadow ($x, $y, $blur, $spread, $c) {
+    -webkit-box-shadow: $x $y $blur $spread $c;
+    -moz-box-shadow: $x $y $blur $spread $c;
+    -ms-box-shadow: $x $y $blur $spread $c;
+    box-shadow: $x $y $blur $spread $c;
+}
+/****************
+    Buttons
+****************/
+@mixin btn-color($type) {
+    @if $type == regular {
+        background-color: $clr-primary;
+        color: $clr-darkest;
+        border: 2px solid $clr-darkest;
+    }
+    @if $type == disabled {
+        background-color: $clr-disabled;
+        color: $clr-lightest;
+    }
+    @if $type == hover {
+        background-color: $clr-darkest;
+        color: $clr-primary;
+    }
+}

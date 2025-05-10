@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Catch The Insect</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- 1st screen -->
+    <div class="screen">
+        <h1>Catch The Insect</h1>
+        <button class="btn" id="start-btn">Start Game</button>
+    </div>
+    <!-- 2nd screen -->
+    <div class="screen">
+        <h1>What's your "favorite" insect?</h1>
+        <ul class="insects-list">
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Fly</p>
+                    <img src="https://pngimg.com/uploads/fly/fly_PNG3950.png" alt="Cluster Fly">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Roach</p>
+                    <img src="https://pngimg.com/uploads/roach/roach_PNG12150.png" alt="American Roach">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Cricket</p>
+                    <img src="https://pngimg.com/uploads/cricket_insect/cricket_insect_PNG5.png" alt="Cricket">
+                </button>
+            </li>
+            <li>
+                <button class="choose-insect-btn">
+                    <p>Spider</p>
+                    <img src="https://pngimg.com/uploads/spider/spider_PNG10.png" alt="Spider">
+                </button>
+            </li>
+        </ul>
+    </div>
+    <!-- 3rd screen -->
+    <div class="screen game-container" id="game-container">
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <h3 id="score" class="score">Score: 0</h3>
+        <h5 id="message" class="message">
+            Are you annoyed yet? <br>
+            You're playing a impossible game
+        </h5>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

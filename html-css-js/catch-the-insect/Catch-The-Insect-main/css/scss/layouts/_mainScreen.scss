@@ -1,0 +1,13 @@
+.screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition:  all 0.5s ease-out;
+    h1 {@include font-header(48);}
+}
+.screen.up {
+    margin-top: -100vh;
+}
