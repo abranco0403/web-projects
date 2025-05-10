@@ -1,0 +1,42 @@
+ export const quizData = [
+    {
+        question: "Which method call is chained to handle a successful response returned by fetch() ?",
+        a: "done()",
+        b: "then()",
+        c: "finally()",
+        d: "catch()",
+        correct: "b",
+    },
+    {
+        question: "Which choice is not an array method?",
+        a: "array.slice()",
+        b: "array.shift()",
+        c: "array.push()",
+        d: "array.replace()",
+        correct: "d",
+    },
+    {
+        question: "Which JavaScript loop ensures that at least a singular iteration will happen?",
+        a: "do...while",
+        b: "forEach",
+        c: "while",
+        d: "for",
+        correct: "a",
+    },
+    {
+        question: "Which statement can take a single expression as input and then look through a number of choices until one that matches that value is found?",
+        a: "else",
+        b: "when",
+        c: "if",
+        d: "switch",
+        correct: "d",
+    },
+    {
+        question: " Which statement is applicable to the defer attribute of the HTML <script> tag?",
+        a: "defer causes the script to be loaded from the backup content delivery network (CDN).",
+        b:"defer allows the browser to continue procesing the page while the script loads in the background.",
+        c: "defer blocks the browser from processing HTML bellow the tag until the script is completely loaded.",
+        d: "defer lazy loads the script, causing it to download only when it is callled by another script on page.",
+        correct: "b",
+    },
+]
