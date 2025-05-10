@@ -1,0 +1,77 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: $light-color;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+.add {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color:$main-color-100;
+    background-image: linear-gradient(315deg, $main-color-100 0%, $main-color-300 74%);
+    ;
+    color: $lightest-color;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+}
+.note {
+    background-color:$lightest-color;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 30px 20px;
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    .tools {
+        background-color:$main-color-100;
+        background-image: linear-gradient(315deg, $main-color-100 0%, $main-color-300 74%);
+        ;
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem;
+        button {
+            background-color: transparent;
+            border: none;
+            color: $lightest-color;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+            i {
+                padding: 0.5rem;
+                border-radius: 50%;
+                background-color: $main-color-500;
+            }
+        }
+    }
+    .main {
+        padding: 20px;
+    }
+    textarea {
+        outline: none;
+        font-family: inherit;
+        font-size: 1.2rem;
+        border: none;
+        height: 400px;
+        width: 100%;
+        padding: 20px;
+    }
+}
+.note .tools button .fa-trash-alt {
+    margin-left: 10px;
+}
+.hidden {
+    display: none;
+}
