@@ -1,0 +1,84 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9fa;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 300px;
+}
+.subtitle {
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+.header {
+    background-color: #0A1BD5;;
+    color: #ffffff;
+    padding: 30px 20px;
+}
+.header .input-group {
+    display: flex;
+}
+.header input {
+    background-color: #ffffff;;
+    border: 0;
+    border-radius: 50px;
+    color: #2e2323;
+    font-size: 14px;
+    padding: 10px 15px;
+    width: 100%;
+}
+.header input:focus {
+    outline: none;
+}
+.user-list {
+    background-color: #ffffff;
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.user-list li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.user-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.user-list .user-info {
+    margin-left: 20px;
+}
+.user-list .user-info h4 {
+    font-size: 16px;;
+    margin: 0 0 10px;
+}
+.user-list .user-info p {
+    font-size: 12px;
+    color: #a0a1a1;
+}
+.user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eeeeee;
+}
+.user-list li.hide {
+    display: none;
+}
