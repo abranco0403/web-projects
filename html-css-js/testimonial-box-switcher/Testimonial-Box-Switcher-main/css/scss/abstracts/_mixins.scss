@@ -1,0 +1,21 @@
+/******
+    typography
+******/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
+
+//Header
+$font-serif: 'Merriweather', serif;
+@mixin font-header($size) {
+    font-weight: bold;
+    font-family: $font-serif;
+    @if $size == 38 { font-size: rem(38px);}
+    @else if $size == 20 { font-size: rem(20px);}
+}
+//Body
+$font-sans: 'Roboto', sans-serif;
+@mixin font-body($size) {
+    font-family: $font-sans;
+    @if $size == 18 { font-size: rem(18px);}
+    @else if $size == 12 { font-size: rem(12px);}
+}
+
