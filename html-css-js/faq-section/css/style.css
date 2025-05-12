@@ -1,0 +1,95 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-base-100: #FFFFFF;
+    --clr-base-600: #121E0E;
+    --clr-accent-200: #d4e6e0;
+    --clr-accent-500:#678E1D;
+    --clr-accent-800: #2E5408;
+}
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-base-100);
+}
+header {
+    text-align: center;
+    margin: 50px 0;
+    color: var(--clr-base-600);
+}
+header h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 20px;
+}
+header h2 {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.faq {
+    background-color: transparent;
+    border: 1px solid var(--clr-base-600);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+.faq.active {
+    background-color: var(--clr-accent-200);
+    border: 0;
+    box-shadow: 0 3px 6px rgba(190, 204, 186, 0.1), 0 3px 6px rgba(190, 204, 186, 0.1);
+}
+.faq-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.faq-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: none;
+}
+.faq.active .faq-text {
+    display: block;
+}
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+.faq-toggle .fa-times {
+    display: none;
+}
+.faq.active .faq-toggle .fa-times {
+    display: block;
+}
+.faq.active .faq-toggle .fa-chevron-down {
+    display: none;
+}
