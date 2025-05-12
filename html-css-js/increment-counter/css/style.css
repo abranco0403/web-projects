@@ -1,0 +1,50 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+
+/*General Styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    -clr-base-100: #FFFFFF;
+    --clr-base-800: #000301;
+}
+body {
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brand {
+    margin-bottom: 50px;
+}
+.counter-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-container {
+    text-align: center;
+}
+.counter-container:nth-child(n+1) {
+    margin-left: 40px;
+}
+.counter {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px 0;
+}
+@media(max-width: 580px) {
+    .counter-area {
+        flex-direction: column;
+    }
+    .counter-container:nth-child(n+1) {
+        margin-top: 40px;
+    }
+}
