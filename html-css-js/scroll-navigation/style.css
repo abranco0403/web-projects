@@ -1,0 +1,321 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@400;500;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+img {
+    display: block;
+    max-width:100%;
+}
+li {
+    list-style: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+section {
+    margin: 40px 0;
+}
+.container {
+    width:100vw;
+}
+.row {
+    padding: 0 64px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Header*/
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .brand {
+    width: 100px;
+    height: 100px;
+}
+/*First Section*/
+.first-content {
+    width: calc(40% - 10px);
+    margin-right: 10px;
+    position: relative;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #060606;
+}
+.first-content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #D0A773;
+    top: -80px;
+}
+.first-content  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.first-content h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.first-content h2 span {
+    font-style: italic;
+}
+.first-content p {
+    max-width: 70%;
+    font:normal 0.875rem/1.6 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #B0B0B0;
+}
+.first-image {
+    width: calc(60% - 10px);
+    margin-left: 10px;
+    position: relative;
+    z-index: 100;
+}
+.first-image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100px;
+    bottom: -30px;
+    left: -60px;
+    background-color: #D0A773;
+}
+.first-footer {
+    width:100%;
+    margin-top: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first-footer a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #060606;
+    margin-left: 20px;
+    padding: 5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+}
+.first-footer a:hover {
+    background-color: #F1F1F1;
+    color:#D0A773;
+    transform: translateY(-4px);
+}
+.social-medias {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+/* Second Section */
+.second-content {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    position: relative;
+}
+.second-content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #D0A773;
+    top: -40px;
+}
+.second-content p:nth-child(1) {
+    max-width: 60%;
+    font:normal 0.875rem/1.5 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #060606;
+}
+.second-content p:nth-child(2) {
+    max-width: 60%;
+    font:normal 0.65rem/1.8 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #B0B0B0;
+}
+.second-image {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+.second-image img {
+    border-top: 10px solid #D0A773;
+}
+/* Thrid Section */
+.container-fluid {
+    width: 100%;
+}
+.third-content {
+    position: relative;
+    margin: 100px 0;
+}
+.third-content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #D0A773;
+    top: -40px;
+}
+.third-content p {
+    width: 40%;
+    font:normal 0.875rem/1.5 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #060606;
+}
+.collage {
+    display:flex;
+    flex-wrap: wrap;
+}
+.collage img {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;;
+}
+.collage img:nth-child(n + 2) {
+    margin-left: 20px;
+}
+.collage img:nth-child(4) {
+    margin-left: 0;
+}
+/*Fourth Section*/
+.fourth-content {
+    width: calc(60% - 10px);
+    margin-right: 10px;
+    position: relative;
+}
+.fourth-content::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #D0A773;
+    top: -40px;
+}
+.fourth-content p:nth-child(1) {
+    max-width: 60%;
+    font:normal 0.875rem/1.5 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #060606;
+}
+.fourth-content p:nth-child(2) {
+    max-width: 60%;
+    font:normal 0.65rem/1.8 'Merriweather', serif;
+    margin-bottom: 1.25rem;
+    color: #B0B0B0;
+}
+.fourth-image {
+    width: calc(40% - 10px);
+    margin-left: 10px;
+}
+.fourth-image img {
+    border-top: 10px solid #D0A773;
+}
+/*Footer*/
+.footer {
+    width: 100vw;
+    background-color: #060606;
+    margin-top: 100px;
+    position: relative;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #D0A773;
+    top: -20px;
+    left: 8vw;
+}
+.footer-row {
+    border: 1px solid #fff;
+    width: 100%;
+    height: 200px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.brand {
+    font: normal bold 1rem/1.2 'Merriweather', serif;
+    color: #F1F1F1;
+}
+.nav-footer {
+    display: flex;
+    margin: 40px 0 20px 0;
+}
+.nav-footer li + li {
+    margin-left: 20px;
+}
+.nav-footer li a {
+    color: #B0B0B0;
+    font-size: 0.875rem;
+    transition: all ease-in-out 0.3s;
+}
+.nav-footer li a.active, 
+.nav-footer li a:hover {
+    color: #F1F1F1;
+    font-weight: bold;;
+}
+.social-icons-footer {
+    display: flex;
+}
+.social-icons-footer a {
+    font-size: 0.875rem;
+    color: #F1F1F1;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all ease-in-out 0.3s;
+}
+.social-icons-footer a + a {
+   margin-left: 20px;
+}
+.social-icons-footer a:hover {
+    background-color: #F1F1F1;
+    color: #060606;
+    transform: translateY(-4px);
+}
+/*Animations*/
+.box-left {
+    transform: translateX(-400%);
+    transition: transform 1s ease;
+}
+.box-right {
+    transform: translateX(400%);
+    transition: transform 1s ease;
+}
+.box-left.show,
+.box-right.show {
+    transform: translateX(0);
+}
+
+
