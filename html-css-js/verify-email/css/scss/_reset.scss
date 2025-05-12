@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-width: 100%;
+    object-fit: fill;
+}
+button {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+    line-height: normal;
+}
+button::-moz-focus-inner, input::-moz-focus-inner { 
+    border: 0; 
+    padding: 0;
+}
