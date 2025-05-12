@@ -1,0 +1,50 @@
+.btn {
+    cursor: pointer;
+    width: 16rem;
+    height: 4rem;
+    border-radius: 1rem;
+    color: $clr-light-300;
+}
+.btn-greenBg {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: .1rem solid $clr-light-300;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $clr-light-300;
+        color: $clr-accent-200;
+    }
+}
+.btn-signUp {
+    width: 100%;
+    background-color: $clr-accent-200;
+    border: none;
+    margin-top: 3rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: $clr-light-200;
+        color: $clr-accent-200;
+        border: 1px solid $clr-accent-200;
+    }
+}
+.btn-google {
+    width: 100%;
+    border: 1px solid $clr-disabled;
+    background-color: $clr-light-300;
+    color: $clr-darkest;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    vertical-align: middle;
+    &:hover {
+        background-color: $clr-light-200;
+        color: $clr-accent-200;
+        border: 1px solid $clr-accent-200;
+    }
+    i {
+        font-size: 1.5rem;
+        margin-right: 0.5rem;
+    }
+}
