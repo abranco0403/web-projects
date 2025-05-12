@@ -1,0 +1,108 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --clr-base-100: #FFFFFF;
+    --clr-base-700: #303030;
+    --clr-accent-100: #F3F6FC;
+    --clr-accent-500: #06BCFB;
+    --clr-accent-700: #4884ee;
+}
+body {
+    height: 100vh;
+    background-color: var(--clr-base-100);
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*---*/
+header h1,
+header h2 {
+    font-family: inherit;
+    color: var(--clr-base-700);
+    margin: 10px 0 0;
+}
+header h1 {
+    font-size: 2rem;
+}
+header h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.cup {
+    width: 150px;
+    height: 300px;
+    background: rgba(241, 234, 234, 0.149);
+    box-shadow: 0 2px 4px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 5px 5px 40px 40px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.cup.cup-small {
+    width: 35px;
+    height: 65px;
+    border-radius: 2px 2px 12px 12px;
+    margin: 5px;
+    font-size: 0.85rem;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cup.cup-small.full {
+    color: var(--clr-base-100);
+    background-color: var(--clr-accent-500);
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+}
+.cups {
+    width: 180px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.remained {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+.remained span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.remained small {
+    font-size: 0.75rem;;
+}
+.percentage {
+    height: 0;
+    background-color: var(--clr-accent-500);
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.text {
+    text-align: center;
+    margin: 0 0 5px;
+}
