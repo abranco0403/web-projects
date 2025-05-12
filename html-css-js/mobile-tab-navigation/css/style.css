@@ -1,0 +1,79 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C1C1C;
+}
+.phone {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #F5E3E6;
+    border-radius: 15px;
+    height: 600px;
+    width: 340px;
+    background: #F5E3E6;
+    box-shadow: 0 0 2px #F5E3E6, 0 0 24px #F5E3E6, 0 0 48px #F5E3E6,
+      0 0 200px #F5E3E6;
+}
+.phone .content {
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left:0;
+    height: calc(100% - 60px);
+    width: 100%;
+    transition: opacity 0.4s ease;
+}
+.phone .content.show {
+    opacity: 1;
+}
+nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: -5px;
+    width: 100%;
+}
+nav ul {
+    background-color: #FFFFFF;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+nav li {
+    cursor: pointer;
+    color: #1C1B1B;
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+nav ul li p {
+    font-size: 12px;
+    margin: 2px 0;
+}
+nav ul li:hover,
+nav ul li.active {
+    color: #EEC8AE;
+}
+nav li i {
+    transform: translateY(0) scale(1);
+    transition: transform 0.2s ease-in-out;
+}
+nav li:hover i {
+    transform: translateY(-2px) scale(1.1);
+}
