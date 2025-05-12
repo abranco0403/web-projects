@@ -1,0 +1,131 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,400&family=Roboto:wght@400;500;700&display=swap');
+
+/*General Styles*/
+:root {
+    --left-bg-color: rgb(190, 117, 111, 0.6);
+    --left-btn-hover-color: rgb(190, 117, 111, 1);
+    --right-bg-color: rgb(144, 156, 194, 0.6);
+    --right-btn-hover-color: rgb(144, 156, 194, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+}
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.split.left {
+    left: 0;
+    background: url('horizon-forbidden-west.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--left-bg-color);
+}
+.split.left, .split.left::before {
+    transition: all var(--speed) ease-in-out;
+}
+.hover-left .left {
+    width: var(--hover-width);
+}
+.hover-left .right {
+    width: var(--other-width);
+}
+.split.right {
+    right: 0;
+    background: url('elden-ring.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.split.right::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--right-bg-color);
+}
+.split.right, .split.right::before {
+    transition: all var(--speed) ease-in-out;
+}
+.hover-right .right {
+    width: var(--hover-width);
+}
+.hover-right .left {
+    width: var(--other-width);
+}
+.btn {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 0.2rem solid #FFFFFF;
+    font: bold 1rem 'Roboto', sans-serif;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split.left .btn:hover {
+    background-color: var(--left-btn-hover-color);
+    border-color: var(--left-btn-hover-color);
+}
+.split.right .btn:hover {
+    background-color: var(--right-btn-hover-color);
+    border-color: var(--right-btn-hover-color);
+}
+
+/*Breakpoints*/
+@media(max-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .btn {
+        width: 12rem;
+        padding: 1.2rem;
+    }
+}
