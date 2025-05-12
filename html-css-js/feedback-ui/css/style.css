@@ -1,0 +1,91 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #020203;
+    background-image: linear-gradient(315deg, #020203 0%, #141414 74%);
+    color:#ffffff;
+}
+/***/
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+}
+.panel-container strong {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+.ratings-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.rating {
+    flex: 1;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px 5px;
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(2, 2, 3, 0.8);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 100;
+    transition: all ease-in-out 0.3s;
+}
+.rate-image {
+    object-fit: fill;
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+.rating small {
+    color: #ffffff;
+    display: inline-block;
+    margin: 10px 0 0;
+    font: normal bold 0.75rem/1.5 'Poppins', sans-serif;
+    transform: scale(0);
+    transition: all ease-in-out 0.3s;
+}
+/***Hover Effects***/
+.rating:hover .overlay,
+.rating.active .overlay  {
+    background-color: rgba(2, 2, 3, 0);
+}
+.rating:hover small,
+.rating.active small {
+    transform: scale(1);
+}
+/***Button***/
+.btn {
+    background-color: #FFF08A;
+    color: #020203;
+    font: normal bold 0.75rem/1.5  'Poppins', sans-serif;
+    border-radius: 4px;
+    padding: 12px 30px;
+    cursor: pointer;
+}
+.btn:focus {outline: 0;}
+.btn:active {transform: scale(0.98);}
