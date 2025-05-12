@@ -1,0 +1,40 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: salmon;
+    color: #010101;
+}
+div {
+    position: absolute;
+    bottom: 20px;
+    background: rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    font-size: 18px;
+}
+input {
+    width: 50px;
+    padding: 5px;
+    font-size: 18px;
+    background-color: salmon;
+    border: none;
+    text-align: center;
+}
+input:focus {
+    outline: none;
+}
